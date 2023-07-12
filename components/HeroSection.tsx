@@ -43,17 +43,19 @@ const HeroSection = () => {
               prefix="I am" appendClass={undefined}          
           
           />
+        
+
           <Link
-            to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Portfolio
-          </Link>
+                to="projects"
+                target="_blank"
+                className="relative px-5 py-3 font-medium text-white group"
+              >
+                <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-blue-500 group-hover:bg-blue-700 group-hover:skew-x-12 rounded-xl"></span>
+                <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-teal-600 group-hover:bg-teal-600 group-hover:-skew-x-12 rounded-xl"></span>
+                <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-teal-600 -rotate-12"></span>
+                <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-teal-600 -rotate-12"></span>
+                <span className="relative">Portfolio</span>
+              </Link>
         </div>
         
       </div>
