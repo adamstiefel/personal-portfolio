@@ -4,29 +4,30 @@ import Link from "next/link"
 import SlideUp from "./SlideUp"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
+
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Wonderin - College",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Streamline the college onboarding process for students and staff.",
+    image: "/project-1.png",
+    github: "https://github.com/adamstiefel",
+    link: "https://home.wonderin.org",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Wonderin - Business",
+    description: "Streamline the onboarding process for businesseses new hires.",
+    image: "/project-2.png",
+    github: "https://github.com/adamstiefel",
+    link: "https://edu.wonderin.org",
   },
   {
-    name: "Kator Family Photos",
+    name: "Blog",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "Blog built with Next.js.",
+    image: "/project-3.png",
+    github: "https://github.com/adamstiefel/nextjs-blog/tree/main",
+    link: "https://nextjs-blog-sepia-kappa.vercel.app",
   },
 ]
 

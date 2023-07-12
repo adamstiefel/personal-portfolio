@@ -1,3 +1,4 @@
+import { link } from "fs";
 import React from "react"
 import {
   AiOutlineGithub,
@@ -8,6 +9,13 @@ import {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const github = "https://github.com/adamstiefel";
+  const twitter = "https://twitter.com/elonmusk";
+  const linkedin = "https://www.linkedin.com/in/adamstiefel/";
+  const youtube = "https://youtube.com/@wonderin.onboarding";
+
+
+
 
   return (
     <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
@@ -17,14 +25,14 @@ const Footer = () => {
           © {currentYear} Adam<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a href="https://github.com/hqasmei" rel="noreferrer" target="_blank">
+          <a href={github} rel="noreferrer" target="_blank">
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />
           </a>
           <a
-            href="https://twitter.com/hqasmei"
+            href={twitter}
             rel="noreferrer"
             target="_blank"
           >
@@ -35,7 +43,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/hosnaqasmei/"
+            href={linkedin}
             rel="noreferrer"
             target="_blank"
           >
@@ -45,7 +53,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+            href={youtube}
             rel="noreferrer"
             target="_blank"
           >

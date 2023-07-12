@@ -3,7 +3,13 @@ import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
-import TypeWriter from "components/TypeWriter.js"
+import TypeWriter from "components/TypeWriter"
+
+
+
+const name = 'Adam';
+
+
 const hats = [
   {
     prep: 'a',
@@ -36,7 +42,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl animate-typing">Hi, I&#39;m Adam!</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl animate-typing">Hi, I&#39;m {name}!</h1>
          
           <TypeWriter 
               hats={hats}

@@ -1,3 +1,12 @@
+## Quick Setup:
+
+cd personal-portfolio
+npm install
+npm run dev
+
+
+## Detailed Setup:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +41,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Change Title information:
+Change site icon, title, meta, etc in app folder head.tsx file
+
+## Change Hero Section
+
+Navigate to the components folder 
+
+Open HeroSection.tsx
+
+Change name by changing const name
+
+change type writer text by modifying hats 
+
+change headshot by uploading your own headshot.png to public
+
+## Change About Me
+Edit AboutSection.tsx
+
+skills
+
+name 
+
+text
+
+change image by uploading your own headshot-image.png to public
+
+## Change Portfolio
+By editing ProjectsSection.tsx
+
+Project image size = 1920 × 1024
+
+

@@ -1,7 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, FC } from 'react'
 
+interface Hat {
+  prep?: string;
+  suffix: string;
+}
 
-export default function TypeWriter({ appendClass, hats, prefix }) {
+interface TypeWriterProps {
+  appendClass?: string;
+  hats: Hat[];
+  prefix: string;
+}
+
+const TypeWriter: FC<TypeWriterProps> = ({ appendClass, hats, prefix }) => {
     // Outer container base class + append custom class
     let className = "flex flex-col gap-4";
     if (appendClass) className += " " + appendClass;
@@ -11,9 +21,9 @@ export default function TypeWriter({ appendClass, hats, prefix }) {
         + "animate-cursor overflow-hidden whitespace-nowrap transition-[width] ease-in-out duration-1000 mr-auto";
 
     // State of current hat index
-    const [currentHat, setCurrentHat] = useState(0);
+    const [currentHat, setCurrentHat] = useState<number>(0);
     // State to toggle word collapse effect
-    const [collapseClass, setCollapseClass] = useState(" w-0");
+    const [collapseClass, setCollapseClass] = useState<string>(" w-0");
 
     useEffect(() => {
         setTimeout(() => setCollapseClass(" w-full"), 100);
@@ -61,3 +71,5 @@ export default function TypeWriter({ appendClass, hats, prefix }) {
         </div>
     )
 }
+
+export default TypeWriter;
